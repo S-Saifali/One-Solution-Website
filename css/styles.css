@@ -476,23 +476,6 @@ ul,ol{ margin:0; padding:0; list-style:none; }
   background-size:16px; background-position:center; background-repeat:no-repeat;
 }
 
-/* ---------------- Crew band ---------------- */
-.crew{ margin-top:56px; padding-top:40px; border-top:1px solid var(--line); }
-.crew__head{ margin-bottom:26px; }
-.crew__head h3{ font-size:1.3rem; margin-bottom:6px; }
-.crew__head p{ margin:0; font-size:.9rem; max-width:56ch; }
-.crew__row{ display:grid; grid-template-columns:repeat(5,1fr); gap:20px; }
-.crew__row li{ text-align:center; }
-.crew__face{
-  display:block; width:100%; max-width:132px; aspect-ratio:1;
-  border-radius:50%; margin:0 auto 14px;
-  background-color:var(--navy); background-repeat:no-repeat;
-  box-shadow:0 0 0 3px var(--tint), 0 0 0 5px var(--yellow);
-}
-.crew__row span{
-  display:block; font-size:.83rem; font-weight:800; color:var(--ink);
-}
-
 /* ---------------- Cities ---------------- */
 .citygrid{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
 .city{
@@ -621,8 +604,6 @@ ul,ol{ margin:0; padding:0; list-style:none; }
      panel switches to column flow, so it must be reset alongside min-height. */
   .epanel{ flex-direction:column; gap:24px; }
   .epanel__photo{ order:-1; flex-basis:auto; min-height:0; height:250px; }
-
-  .crew__row{ grid-template-columns:repeat(3,1fr); gap:24px 16px; }
 }
 
 @media (max-width:860px){
@@ -674,9 +655,6 @@ ul,ol{ margin:0; padding:0; list-style:none; }
   .epanel{ padding:26px 22px 24px; gap:20px; }
   .epanel__list{ grid-template-columns:1fr; }
   .epanel__photo{ height:215px; }
-  .crew{ margin-top:40px; padding-top:32px; }
-  .crew__row{ grid-template-columns:repeat(2,1fr); gap:22px 14px; }
-  .crew__face{ max-width:118px; }
   .epanel__foot .btn{ width:100%; }
   .footer__grid{ grid-template-columns:1fr; gap:28px; }
   .fab{ right:14px; bottom:14px; }
